@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <h1>Resume Builder</h1>
+
+    <div class="container" id="resume-form">
+        <div class="left">
+            <!-- left column -->
+            <h2>Personal Information</h2>
+
+            <div class="form-group">
+                <label for="nameField">Your name : </label><br>
+                <input type="text" id="nameField" placeholder="Enter here" class="form-control">
+
+            </div>
+            <div class="form-group">
+                <label for="contactField">Your contact : </label> <br>
+                <input type="text" id="contactField" placeholder="Enter here" class="form-control">
+
+            </div>
+            <div class="form-group">
+                <label for="addressField">Your address : </label> <br>
+                <textarea id="addressField" placeholder="Enter here" class="form-control" rows=""></textarea>
+            </div>
+
+            <p id="impLink" contenteditable="true">Important Links :</p>
+
+            
+                        <div class="form-group">
+                            <label for="emailField">Email : </label><br>
+                            <input type="text" id="emailField" placeholder="Enter here" class="form-control">
+            
+                        </div>
+            <div class="form-group">
+                <label for="linkedField">LinkedIn : </label><br>
+                <input type="text" id="linkedField" placeholder="Enter here" class="form-control">
+
+            </div>
+
+            <div class="form-group">
+                <label for="twitterField">Twitter : </label><br>
+                <input type="text" id="twitterField" placeholder="Enter here" class="form-control">
+
+            </div>
+        </div>
+
+
+
+
+        <div class="right">
+            <!-- right column  -->
+            <h2>Professional Information</h2>
+
+            <div class="form-group">
+                <label for="objectiveField">Your objective : </label> <br>
+                <textarea id="objectiveField" placeholder="Enter here" class="form-control " rows=""></textarea>
+            </div>
+
+
+            <div class="form-group" id="we">
+                <label for="weField">Work Experience : </label> <br>
+                <textarea id="weField" placeholder="Enter here" class="form-control weField" rows=""></textarea>
+
+                <div class="btnDiv" id="weAddBtn">
+                    <button onclick="AddNewWeField()" class="addBtn">Add +</button>
+                </div>
+
+            </div>
+
+
+            <div class="form-group" id="aq">
+                <label for="eqField">Academic Qualification : </label> <br>
+                <textarea id="eqField" placeholder="Enter here" class="form-control aqField" rows=""></textarea>
+
+                <div class="btnDiv" id="aqAddBtn">
+                    <button onclick="addNewAqField()" class="addBtn">Add +</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <div class="generateResume">
+        <button class="generateResumeBtn">Generate Resume</button>
+    </div>
+
+
+
+
+    <!-- resume template -->
+
+    <div class="resumeTemplateContainer">
+        <div class="left-component">
+            <img src="https://manufactur3dmag.com/wp-content/uploads/2020/07/blank-profile-male.jpg" alt="Profile"
+                title="Interviewee" id="profile">
+
+            <p class="about Name" id="Name">Nikhil Kamble</p>
+            <p class="about" id="contact">+91xxxxxxxxxx , +91xxxxxxxxxx</p>
+            <p class="about" id="address">Latur , Latur Mh India</p>
+
+            <div class="links">
+                <a href="" id="email" target="_blank">Email</a> <br>
+                <a href="" id="linkedin" target="_blank">LinkedIn</a> <br>
+                <a href="" id="twitter" target="_blank">Twitter</a>
+            </div>
+        </div>
+        <div class="right-component">
+
+            <h2 class="Name">Nikhil Kamble</h2>
+
+            <div class="objective">
+                <h3>Objective :</h3>
+                <p id="objectiveText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero accusantium qui mollitia ullam
+                    dolore accusamus enim repudiandae, sed rerum. Neque magni, delectus asperiores, quis sunt nam
+                    veritatis adipisci at blanditiis reprehenderit eius praesentium recusandae modi quibusdam, officia
+                    perferendis maiores rem.</p>
+            </div>
+
+            <div class="workExperience">
+                <h3>Work Experience :</h3>
+                <p id="workExperienceText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero accusantium qui mollitia ullam
+                    dolore accusamus enim repudiandae, sed rerum. Neque magni, delectus asperiores, quis sunt nam
+                    veritatis adipisci at blanditiis reprehenderit eius praesentium recusandae modi quibusdam, officia
+                    perferendis maiores rem.</p>
+            </div>
+
+            <div class="academicQualification">
+                <h3>Academic Qualification :</h3>
+                <p id="academicQualificationText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero accusantium qui mollitia ullam
+                    dolore accusamus enim repudiandae, sed rerum. Neque magni, delectus asperiores, quis sunt nam
+                    veritatis adipisci at blanditiis reprehenderit eius praesentium recusandae modi quibusdam, officia
+                    perferendis maiores rem.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
